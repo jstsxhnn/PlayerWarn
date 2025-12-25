@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "playeralertjj",
+  "version": "${version}",
+  "name": "PlayerAlertJJ",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/playeralertjj/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.example.playeralertjj.client.PlayeralertjjDataGenerator"
+    ],
+    "client": [
+      "com.example.playeralertjj.client.PlayeralertjjClient"
+    ],
+    "main": [
+      "com.example.playeralertjj.Playeralertjj"
+    ]
+  },
+  "mixins": [
+    "playeralertjj.mixins.json",
+    {
+      "config": "playeralertjj.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

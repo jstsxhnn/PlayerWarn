@@ -1,0 +1,12 @@
+.gradle/
+build/
+out/
+.idea/
+*.iml
+
+# Fabric / Minecraft
+run/
+logs/
+
+# OS
+.DS_Store
